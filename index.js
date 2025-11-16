@@ -1,10 +1,10 @@
 import express from 'express';
 
-const app = express()
+const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Offroad Kantapon')
-})
+    res.send('Offroad Kantapon');
+});
 
 const PORT = process.env.PORT || 3000;
 
