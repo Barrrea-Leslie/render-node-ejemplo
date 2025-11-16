@@ -8,7 +8,7 @@ const app = express();
 
 const pool = new pg.Pool({
     connectionString: process.env.DATABASE_URL,
-    
+    ssl: { rejectUnauthorized: false }
 })
 
 app.get('/', (req, res) => {
